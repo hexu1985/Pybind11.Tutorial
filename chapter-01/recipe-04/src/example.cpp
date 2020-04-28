@@ -11,11 +11,11 @@ PYBIND11_MODULE(example, m) {
 
 #ifndef USE_PYBIND11_LITERALS
     m.def("add", &add, "A function which adds two numbers",
-            py::arg("i"), py::arg("j"));
+            py::arg("i") = 1, py::arg("j") = 2);
 #else
     using namespace pybind11::literals;
     m.def("add", &add, "A function which adds two numbers",
-            "i"_a, "j"_a);
+            "i"_a=1, "j"_a=2);
 #endif
 
 }
