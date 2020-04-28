@@ -2,7 +2,7 @@
 RM = rm -f
 CREATE_SO = g++ -shared
 CXX = g++
-CXXFLAGS = -fPIC -Wall -g -DNDEBUG -std=c++11
+CXXFLAGS = -fPIC -Wall -g -DNDEBUG -std=c++11 #-DUSE_PYBIND11_LITERALS
 INCLUDES = -I$(HOME)/local/include -I/usr/include/python3.6m 
 LDFLAGS = #-lpython3.6m
 LDPATH =
