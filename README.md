@@ -1,4 +1,4 @@
-# Boost.Python Tutorial
+# Pybind11 Tutorial
 
 ## Table of contents
 
