@@ -5,7 +5,7 @@
 ### [pybind11入门](getting_started)
 - [第一个例子](getting_started/hello)
 - [指定扩展模块的python版本](getting_started/specify_python_version)
-- [绑定函数](getting_started/binding_function)
+- [绑定函数](getting_started/binding_functions)
 - [关键字参数](getting_started/keyword_arguments)
 - [参数默认值](getting_started/default_arguments)
 - [导出变量](getting_started/exporting_variables)
