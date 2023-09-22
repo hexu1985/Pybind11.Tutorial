@@ -5,3 +5,4 @@
 - [绑定函数](binding_function)
 - [关键字参数](keyword_arguments)
 - [参数默认值](default_arguments)
+- [导出变量](exporting_variables)

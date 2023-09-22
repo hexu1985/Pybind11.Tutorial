@@ -3,8 +3,8 @@
 import sys
 sys.path.append('./build')
 
-import hello
-s = hello.greet()
-assert s == "hello, world"
+import example
+s = example.greet()
+assert s == "hello, world!"
 print(s)
 

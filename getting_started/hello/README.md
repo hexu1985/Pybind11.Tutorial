@@ -8,7 +8,7 @@
 
 ```
 add_subdirectory(pybind11)
-pybind11_add_module(hello hello.cpp)
+pybind11_add_module(example example.cpp)
 ```
 
 来构建python的C++扩展模块，编译出来的就是一个.so，且符合python模块规范的。
@@ -17,18 +17,16 @@ pybind11_add_module(hello hello.cpp)
 
 ```cpp
 #include <pybind11/pybind11.h>
-
 namespace py = pybind11;
 
 char const* greet()     // greet函数定义
 {
-   return "hello, world";
+   return "hello, world!";
 }
 
-PYBIND11_MODULE(hello, m)  // 指示要扩展的python模块名为"hello"
+PYBIND11_MODULE(example, m)  // 指示要扩展的python模块名为"example"
 {
-    m.doc() = "pybind11 example hello";
-
+    m.doc() = "pybind11 example plugin"; // optional module docstring
     m.def("greet", greet, "A function which print \"hello, world\"");        // 将greet函数导出到python, 并且在python中函数名也叫"greet"
 }
 ```
@@ -39,3 +37,9 @@ PYBIND11_MODULE(hello, m)  // 指示要扩展的python模块名为"hello"
 
 编译上面的C++代码后，我们会得到一个二进制模块文件，直接使用`import`导入模块到Python中。
 假设编译好的模块位于当前目录下，Python交互示例代码如下：
+```
+$ python3
+>>> import example
+>>> example.greet()
+'hello, world!'
+```

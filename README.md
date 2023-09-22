@@ -8,6 +8,7 @@
 - [绑定函数](getting_started/binding_function)
 - [关键字参数](getting_started/keyword_arguments)
 - [参数默认值](getting_started/default_arguments)
+- [导出变量](getting_started/exporting_variables)
 
 
 ### 参考链接
