@@ -15,6 +15,7 @@
 
 ### [面向对象编程](object_oriented_code)
 - [创建一个自定义类的绑定](object_oriented_code/binding_custom_types)
+- [绑定匿名函数](object_oriented_code/binding_lambda_functions)
 
 
 ### 参考链接
