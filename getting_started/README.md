@@ -7,3 +7,4 @@
 - [参数默认值](default_arguments)
 - [重载函数](overloaded_functions)
 - [导出变量](exporting_variables)
+- [创建一个自定义类的绑定](binding_custom_types)

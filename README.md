@@ -10,6 +10,7 @@
 - [参数默认值](getting_started/default_arguments)
 - [重载函数](getting_started/overloaded_functions)
 - [导出变量](getting_started/exporting_variables)
+- [创建一个自定义类的绑定](getting_started/binding_custom_types)
 
 
 ### 参考链接
