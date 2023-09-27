@@ -19,6 +19,7 @@
 - [成员变量](object_oriented_code/instance_and_static_fields)
 - [动态属性](object_oriented_code/dynamic_attributes)
 - [继承与向下转型](object_oriented_code/inheritance_and_automatic_downcasting)
+- [重载方法](object_oriented_code/overloaded_methods)
 
 
 ### 参考链接
