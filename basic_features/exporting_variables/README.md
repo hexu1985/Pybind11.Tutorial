@@ -8,7 +8,7 @@ PYBIND11_MODULE(example, m) {
     py::object world = py::cast("World");
     m.attr("what") = world;
 }
-``
+```
 
 Python中使用如下：
 ```
