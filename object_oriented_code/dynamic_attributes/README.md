@@ -19,7 +19,7 @@ AttributeError: 'Pet' object has no attribute 'age'
 ```
 
 要让C++类也支持动态属性，我们需要在`py::class_`的构造函数添加`py::dynamic_attr`标识：
-```c++
+```cpp
 py::class_<Pet>(m, "Pet", py::dynamic_attr())
     .def(py::init<>())
     .def_readwrite("name", &Pet::name);

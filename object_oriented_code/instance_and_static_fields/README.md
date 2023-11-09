@@ -2,7 +2,7 @@
 
 使用`class_::def_readwrite`方法可以导出公有成员变量，使用`class_::def_readonly`方法则可以导出只读成员。
 
-```c++
+```cpp
 py::class_<Pet>(m, "Pet")
     .def(py::init<const std::string &>())
     .def_readwrite("name", &Pet::name)
@@ -21,7 +21,7 @@ u'Charly'
 
 假设`Pet::name`是一个私有成员变量，向外提供setter和getters方法。
 
-```c++
+```cpp
 class Pet {
 public:
     Pet(const std::string &name) : name(name) { }
@@ -33,7 +33,7 @@ private:
 ```
 
 可以使用`class_::def_property()`(只读成员使用`class_::def_property_readonly()`)来定义并私有成员，并生成相应的setter和geter方法：
-```c++
+```cpp
 py::class_<Pet>(m, "Pet")
     .def(py::init<const std::string &>())
     .def_property("name", &Pet::getName, &Pet::setName)

@@ -2,7 +2,7 @@
 
 让我们来看一个更加复杂的例子：绑定一个C++自定义数据结构`Pet`。定义如下：
 
-```c++
+```cpp
 struct Pet {
     Pet(const std::string &name) : name(name) { }
     void setName(const std::string &name_) { name = name_; }
@@ -14,7 +14,7 @@ struct Pet {
 
 绑定代码如下所示：
 
-```c++
+```cpp
 #include <pybind11/pybind11.h>
 namespace py = pybind11;
 

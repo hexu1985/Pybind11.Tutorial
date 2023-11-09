@@ -1,13 +1,13 @@
 ### 关键字参数
 
 使用`py::arg`可以指定函数的参数名，Python侧调用函数时可以使用关键字参数，以增加代码的可读性。
-```c++
+```cpp
 m.def("add", &add, "A function which adds two numbers",
       py::arg("i"), py::arg("j"));
 ```
 
 更简洁的写法：
-```c++
+```cpp
 // regular notation
 m.def("add1", &add, py::arg("i"), py::arg("j"));
 // shorthand

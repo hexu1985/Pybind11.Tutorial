@@ -8,7 +8,7 @@
 
 我们可以绑定一个工具函数到`__repr__`方法，来返回可读性好的摘要信息。在不改变Pet类的基础上，使用一个匿名函数来完成这个功能是一个不错的选择。
 
-```c++
+```cpp
 py::class_<Pet>(m, "Pet")
     .def(py::init<const std::string &>())
     .def("setName", &Pet::setName)

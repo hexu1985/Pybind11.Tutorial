@@ -1,7 +1,7 @@
 ### 重载方法
 
 重载方法即拥有相同的函数名，但入参不一样的函数：
-```c++
+```cpp
 struct Pet {
     Pet(const std::string &name, int age) : name(name), age(age) { }
 
@@ -15,7 +15,7 @@ struct Pet {
 
 我们在绑定`Pet::set`时会报错，因为编译器并不知道用户想选择哪个重载方法。我们需要添加具体的函数指针来消除歧义。绑定多个函数到同一个Python名称，将会自动创建函数重载链。Python将会依次匹配，找到最合适的重载函数。
 
-```c++
+```cpp
 py::class_<Pet>(m, "Pet")
    .def(py::init<const std::string &, int>())
    .def("set", static_cast<void (Pet::*)(int)>(&Pet::set), "Set the pet's age")
@@ -43,7 +43,7 @@ class Pet(__builtin__.object)
 ```
 
 如果你的编译器支持C++14，也可以使用下面的语法来转换重载函数：
-```c++
+```cpp
 py::class_<Pet>(m, "Pet")
     .def("set", py::overload_cast<int>(&Pet::set), "Set the pet's age")
     .def("set", py::overload_cast<const std::string &>(&Pet::set), "Set the pet's name");
@@ -51,7 +51,7 @@ py::class_<Pet>(m, "Pet")
 
 这里，`py::overload_cast`仅需指定函数类型，不用给出返回值类型，以避免原语法带来的不必要的干扰(`void (Pet::*)`)。如果是基于const的重载，需要使用`py::const`标识。
 
-```c++
+```cpp
 struct Widget {
     int foo(int x, float y);
     int foo(int x, float y) const;
@@ -64,7 +64,7 @@ py::class_<Widget>(m, "Widget")
 
 如果你想在仅支持c++11的编译器上使用`py::overload_cast`语法，可以使用`py::detail::overload_cast_impl`来代替：
 
-```c++
+```cpp
 template <typename... Args>
 using overload_cast_ = pybind11::detail::overload_cast_impl<Args...>;
 

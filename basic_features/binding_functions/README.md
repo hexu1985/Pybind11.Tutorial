@@ -1,6 +1,6 @@
 ### 绑定函数
 
-```c++
+```cpp
 #include <pybind11/pybind11.h>
 
 int add(int i, int j) {
