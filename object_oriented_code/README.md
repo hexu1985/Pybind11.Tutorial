@@ -6,4 +6,5 @@
 - [动态属性](dynamic_attributes)
 - [继承与向下转型](inheritance_and_automatic_downcasting)
 - [重载方法](overloaded_methods)
+- [枚举和内部类型](enumarations_and_internal_types)
 

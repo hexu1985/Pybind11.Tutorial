@@ -20,10 +20,11 @@
 - [动态属性](object_oriented_code/dynamic_attributes)
 - [继承与向下转型](object_oriented_code/inheritance_and_automatic_downcasting)
 - [重载方法](object_oriented_code/overloaded_methods)
+- [枚举和内部类型](object_oriented_code/enumarations_and_internal_types)
 
 
 ### 参考链接
 
 - pybind11官网： <https://pybind11.readthedocs.io/en/latest/index.html>
-- pybind11中文文档：<https://github.com/charlotteLive/pybind11-Chinese-docs>
+- pybind11中文文档：<https://github.com/charlotteLive/pybind11-Chinese-docs> <https://charlottelive.github.io/pybind11-Chinese-docs/>
 - github项目：<https://github.com/pybind/pybind11>
