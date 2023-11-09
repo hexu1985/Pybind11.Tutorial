@@ -11,3 +11,9 @@ find_package(PythonInterp ${PYTHON_TARGET_VER} EXACT REQUIRED)
 
 来指定扩展模块的python版本，其他的不变。
 
+运行测试py脚本：
+
+```
+$ python3.8 test.py
+```
+
