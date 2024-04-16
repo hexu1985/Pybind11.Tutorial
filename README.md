@@ -22,6 +22,9 @@
 - [重载方法](object_oriented_code/overloaded_methods)
 - [枚举和内部类型](object_oriented_code/enumarations_and_internal_types)
 
+### 函数
+- [返回值策略](functions/return_value_policies)
+
 
 ### 参考链接
 
