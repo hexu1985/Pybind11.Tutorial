@@ -26,6 +26,7 @@
 - [返回值策略](functions/return_value_policies)
 - [附加的调用策略](functions/additional_call_policies)
 - [以Python对象作为参数](functions/python_objects_as_arguments)
+- [接收`*args`和`**kwatgs`参数](functions/accepting_args_and_kwargs)
 
 
 ### 参考链接
