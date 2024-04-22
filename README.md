@@ -29,6 +29,7 @@
 - [接收`*args`和`**kwatgs`参数](functions/accepting_args_and_kwargs)
 - [再探默认参数](functions/default_arguments_revisited)
 - [Keyword-only参数](functions/keyword_only_arguments)
+- [Positional-only参数](functions/positional_only_arguments)
 
 
 ### 参考链接
