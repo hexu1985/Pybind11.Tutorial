@@ -31,7 +31,7 @@
 - [Keyword-only参数](functions/keyword_only_arguments)
 - [Positional-only参数](functions/positional_only_arguments)
 - [Non-converting参数](functions/non_converting_arguments)
-
+- [允许/禁止空参数](functions/allow_prohibiting_none_arguments)
 - [重载解析顺序](functions/overload_resolution_order)
 
 
