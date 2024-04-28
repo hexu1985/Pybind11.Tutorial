@@ -34,6 +34,8 @@
 - [允许/禁止空参数](functions/allow_prohibiting_none_arguments)
 - [重载解析顺序](functions/overload_resolution_order)
 
+### [类](classes)
+- [在Python中重载虚函数](classes/overriding_virtual_functions)
 
 ### 参考链接
 
