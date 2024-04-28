@@ -23,3 +23,5 @@ class Dachshund(Dog):
     def bark(self):
         return "yap!"
 
+ds = Dachshund("dachshund")
+print(ds.bark())
