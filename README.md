@@ -38,6 +38,7 @@
 - [在Python中重载虚函数](classes/overriding_virtual_functions)
 - [虚函数与继承](classes/combining_virtual_functions_and_inheritance)
 - [扩展跳板类的功能](classes/extended_trampoline_class_functionality)
+- [定制构造函数](classes/custom_constructors)
 
 ### 参考链接
 
