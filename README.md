@@ -39,9 +39,11 @@
 - [虚函数与继承](classes/combining_virtual_functions_and_inheritance)
 - [扩展跳板类的功能](classes/extended_trampoline_class_functionality)
 - [定制构造函数](classes/custom_constructors)
+- [非公有析构函数](classes/non_public_destructors)
+- [在析构函数中调用Python](classes/destructors_that_call_python)
 
 ### 参考链接
 
 - pybind11官网： <https://pybind11.readthedocs.io/en/latest/index.html>
-- pybind11中文文档：<https://github.com/charlotteLive/pybind11-Chinese-docs> <https://charlottelive.github.io/pybind11-Chinese-docs/>
+- pybind11中文文档：<https://github.com/charlotteLive/pybind11-Chinese-docs>  <https://charlottelive.github.io/pybind11-Chinese-docs/>
 - github项目：<https://github.com/pybind/pybind11>
