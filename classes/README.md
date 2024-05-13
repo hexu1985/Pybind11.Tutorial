@@ -6,4 +6,8 @@
 - [定制构造函数](custom_constructors)
 - [非公有析构函数](non_public_destructors)
 - [在析构函数中调用Python](destructors_that_call_python)
+- [隐式转换](implicit_conversions)
+- [静态属性](static_properties)
+- [重载操作符](operator_overloading)
+- [支持pickle](pickling_support)
 
