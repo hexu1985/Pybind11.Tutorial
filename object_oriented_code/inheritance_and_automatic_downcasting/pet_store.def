@@ -1,3 +1,0 @@
-
-// Return a base pointer to a derived instance
-m.def("pet_store", []() { return std::unique_ptr<Pet>(new Dog("Molly")); });
