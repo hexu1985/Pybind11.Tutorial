@@ -38,7 +38,7 @@ std::string call_go(Animal *animal) {
     return animal->go(3);
 }
 
-PYBIND11_MODULE(example2, m) {
+PYBIND11_MODULE(example, m) {
     py::class_<Animal, PyAnimal /* <--- trampoline*/>(m, "Animal")
         .def(py::init<>())
         .def("go", &Animal::go);

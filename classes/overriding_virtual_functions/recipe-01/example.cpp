@@ -22,7 +22,7 @@ std::string call_go(Animal *animal) {
     return animal->go(3);
 }
 
-PYBIND11_MODULE(example1, m) {
+PYBIND11_MODULE(example, m) {
     py::class_<Animal>(m, "Animal")
         .def("go", &Animal::go);
 

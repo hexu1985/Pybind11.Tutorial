@@ -3,7 +3,7 @@
 import sys
 sys.path.append('./build')
 
-from example2 import *
+from example import *
 
 d = Dog()
 print(call_go(d))     # u'woof! woof! woof! '
