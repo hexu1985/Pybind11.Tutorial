@@ -10,4 +10,6 @@
 - [静态属性](static_properties)
 - [重载操作符](operator_overloading)
 - [支持pickle](pickling_support)
+- [深拷贝支持](deepcopy_support)
+- [多重继承](multiple_inheritance)
 
