@@ -2,9 +2,11 @@
 
 ## Table of contents
 
+
 ### [pybind11入门](getting_started)
 - [第一个例子](getting_started/hello)
 - [指定扩展模块的python版本](getting_started/specify_python_version)
+
 
 ### [基础用法](basic_features)
 - [绑定函数](basic_features/binding_functions)
@@ -12,6 +14,7 @@
 - [参数默认值](basic_features/default_arguments)
 - [重载函数](basic_features/overloaded_functions)
 - [导出变量](basic_features/exporting_variables)
+
 
 ### [面向对象编程](object_oriented_code)
 - [创建一个自定义类的绑定](object_oriented_code/binding_custom_types)
@@ -21,6 +24,7 @@
 - [继承与向下转型](object_oriented_code/inheritance_and_automatic_downcasting)
 - [重载方法](object_oriented_code/overloaded_methods)
 - [枚举和内部类型](object_oriented_code/enumarations_and_internal_types)
+
 
 ### [函数](functions)
 - [返回值策略](functions/return_value_policies)
@@ -33,6 +37,7 @@
 - [Non-converting参数](functions/non_converting_arguments)
 - [允许/禁止空参数](functions/allow_prohibiting_none_arguments)
 - [重载解析顺序](functions/overload_resolution_order)
+
 
 ### [类](classes)
 - [在Python中重载虚函数](classes/overriding_virtual_functions)
@@ -51,9 +56,11 @@
 - [绑定protected成员函数](classes/binding_protected_member_functions)
 - [绑定final类](classes/binding_final_classes)
 
+
 ### [异常](exceptions)
 - [C++内置异常到Python异常的转换](exceptions/build_in_exception_translation)
 - [注册自定义异常翻译](exceptions/registering_custom_translators)
+- [在C++中处理Python异常](exceptions/handling_python_excepitons_in_cxx)
 
 ### 参考链接
 
