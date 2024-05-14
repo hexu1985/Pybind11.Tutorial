@@ -5,4 +5,5 @@
 - [在C++中处理Python异常](handling_python_excepitons_in_cxx)
 - [处理Python C API的错误](handling_python_c_api_errors)
 - [异常链（raise from）](chaining_exceptions)
+- [处理unraiseable异常](handling_unraisable_exceptions)
 
