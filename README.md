@@ -48,6 +48,7 @@
 - [深拷贝支持](classes/deepcopy_support)
 - [多重继承](classes/multiple_inheritance)
 - [绑定Module-local类](classes/module_local_class_bindings)
+- [绑定protected成员函数](classes/binding_protected_member_functions)
 
 
 ### 参考链接
