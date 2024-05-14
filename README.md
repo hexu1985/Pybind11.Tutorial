@@ -47,6 +47,7 @@
 - [支持pickle](classes/pickling_support)
 - [深拷贝支持](classes/deepcopy_support)
 - [多重继承](classes/multiple_inheritance)
+- [绑定Module-local类](classes/module_local_class_bindings)
 
 
 ### 参考链接
