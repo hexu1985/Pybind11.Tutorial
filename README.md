@@ -61,6 +61,8 @@
 - [C++内置异常到Python异常的转换](exceptions/build_in_exception_translation)
 - [注册自定义异常翻译](exceptions/registering_custom_translators)
 - [在C++中处理Python异常](exceptions/handling_python_excepitons_in_cxx)
+- [处理Python C API的错误](exceptions/handling_python_c_api_errors)
+
 
 ### 参考链接
 
