@@ -51,6 +51,8 @@
 - [绑定protected成员函数](classes/binding_protected_member_functions)
 - [绑定final类](classes/binding_final_classes)
 
+### [异常](exceptions)
+- [C++内置异常到Python异常的转换](exceptions/build_in_exception_translation)
 
 ### 参考链接
 
