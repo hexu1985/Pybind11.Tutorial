@@ -66,6 +66,11 @@
 - [处理unraiseable异常](exceptions/handling_unraisable_exceptions)
 
 
+### [智能指针](smart_pointers)
+- [std::unique_ptr](smart_pointers/unique_ptr)
+- [std::shared_ptr](smart_pointers/shared_ptr)
+
+
 ### 参考链接
 
 - pybind11官网： <https://pybind11.readthedocs.io/en/latest/index.html>
