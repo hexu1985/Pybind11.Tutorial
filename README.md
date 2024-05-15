@@ -69,6 +69,7 @@
 ### [智能指针](smart_pointers)
 - [std::unique_ptr](smart_pointers/unique_ptr)
 - [std::shared_ptr](smart_pointers/shared_ptr)
+- [自定义智能指针](smart_pointers/custom_smart_pointers)
 
 
 ### 参考链接
