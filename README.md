@@ -74,6 +74,7 @@
 
 ### [类型转换](type_conversions)
 - [概述](type_conversions/overview)
+- [Strings、bytes和Unicode转换](strings_bytes_and_unicode_conversions)
 
 
 ### 参考链接
