@@ -33,4 +33,34 @@ py::register_exception_translator(translator) 和py::register_local_exception_tr
 
 C++异常抛出时，注册的异常翻译类将以注册时相反的顺序匹配，优先匹配模块内翻译类，然后再是全局翻译类。
 
+在转换器中，应该在 try 块中使用 std::rethrow_exception 来重新抛出异常。
+我们用一个或多个 catch 块来捕获适当的异常，而每个 catch 块应该使用 py::set_error() 来设置Python异常。
+
+要声明自定义 Python 异常类型，请声明一个 py::exception 变量，并在关联的异常转换器中使用它（注意：在 lambda 表达式中使用它时，将其设置为静态声明通常很有用，而无需捕获）。
+
+以下示例演示了两个假定的异常类 MyCustomException 和 OtherException ：第一个转换为自定义 python 异常 MyCustomError，而第二个转换为标准 python RuntimeError：
+
+```cpp
+PYBIND11_CONSTINIT static py::gil_safe_call_once_and_store<py::object> exc_storage;
+
+exc_storage.call_once_and_store_result(
+    [&]() { return py::exception<MyCustomException>(m, "MyCustomError"); });
+
+py::register_exception_translator([](std::exception_ptr p) {
+    try {
+        if (p) std::rethrow_exception(p);
+    } catch (const MyCustomException &e) {
+        py::set_error(exc_storage.get_stored(), e.what());
+    } catch (const OtherException &e) {
+        py::set_error(PyExc_RuntimeError, e.what());
+    }
+});
+```
+
+单个转换器可以处理多个异常，如上面的示例所示。如果当前转换器中未 catch 这个异常，则先前注册的转换器将有机会继续处理。
+
+如果所有已注册的异常转换器都无法处理异常，则由默认转换器处理异常。
+
+> 为自定义异常转换器中捕获的每个异常调用 py::set_error()。否则将导致 Python 崩溃，并显示 SystemError: error return without exception set。
+> 您不打算处理的异常不应该被捕获，或者可以显式（重新）抛出，以将其委托给其他先前声明的异常转换器。
 
