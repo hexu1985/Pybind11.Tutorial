@@ -55,6 +55,7 @@
 - [绑定Module-local类](classes/module_local_class_bindings)
 - [绑定protected成员函数](classes/binding_protected_member_functions)
 - [绑定final类](classes/binding_final_classes)
+- [绑定模板类](classes/binding_classes_with_template_parameters)
 
 
 ### [异常](exceptions)
