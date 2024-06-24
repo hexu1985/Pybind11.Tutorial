@@ -16,3 +16,5 @@
 - [绑定protected成员函数](binding_protected_member_functions)
 - [绑定final类](binding_final_classes)
 - [绑定模板类](binding_classes_with_template_parameters)
+- [定制自动向下转型](custom_automatic_downcasters)
+
