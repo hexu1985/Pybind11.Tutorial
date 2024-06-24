@@ -17,4 +17,5 @@
 - [绑定final类](binding_final_classes)
 - [绑定模板类](binding_classes_with_template_parameters)
 - [定制自动向下转型](custom_automatic_downcasters)
+- [访问类型对象](accessing_the_type_object)
 
