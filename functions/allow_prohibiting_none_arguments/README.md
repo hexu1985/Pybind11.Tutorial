@@ -39,4 +39,9 @@ Invoked with: None
 
 在不显式指定的情况下，默认支持传递None。
 
+> Note: 即使为参数指定了 .none(true)，也只会将自定义类型和不透明类型转换为 nullptr。
+> 指向内置类型（double *、int *、...）和 STL 类型（std::vector<T> *、...;如果包含 pybind11/stl.h）
+> 的指针在转换为 C++ 时会被复制，并且不允许 None 作为参数。
+> 若要传递这些复制类型的可选参数，请考虑使用 std::optional<T>
+> 
 
