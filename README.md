@@ -80,6 +80,7 @@
 - [概述](type_conversions/overview)
 - [Strings、bytes和Unicode转换](strings_bytes_and_unicode_conversions)
 - [STL容器](type_conversions/stl_containers)
+- [函数对象](type_conversions/functional)
 
 
 ### 参考链接
