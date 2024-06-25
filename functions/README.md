@@ -10,4 +10,5 @@
 - [Non-converting参数](non_converting_arguments)
 - [允许/禁止空参数](allow_prohibiting_none_arguments)
 - [重载解析顺序](overload_resolution_order)
+- [使用模板参数绑定函数](binding_functions_with_template_parameters)
 
