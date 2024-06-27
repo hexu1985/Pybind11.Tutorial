@@ -81,6 +81,7 @@
 - [Strings、bytes和Unicode转换](strings_bytes_and_unicode_conversions)
 - [STL容器](type_conversions/stl_containers)
 - [函数对象](type_conversions/functional)
+- [chrono](type_conversions/fchrono)
 
 
 ### 参考链接
