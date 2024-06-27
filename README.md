@@ -82,6 +82,7 @@
 - [STL容器](type_conversions/stl_containers)
 - [函数对象](type_conversions/functional)
 - [chrono](type_conversions/fchrono)
+- [自定义类型转换](type_conversions/custom_type_casters)
 
 
 ### 参考链接
